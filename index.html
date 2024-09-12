@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerey</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <header>
+        <h1>Our Gallery</h1>
+        <p>All brids is beautifly!</p>
+    </header>
+    <section id="photo">
+    </section>
+</body>
+<script>
+    const area = document.querySelector('#photo')
+    const item = `
+        <a class='box' href='assets/photo1.jpg' target='_black'>
+            <img src='assets/photo1.jpg' />
+        </a>
+    `
+    for (let i = 1; i <= 15; i++) {
+        area.insertAdjacentHTML('beforeend', item)
+    }
+</script>
+</html>
